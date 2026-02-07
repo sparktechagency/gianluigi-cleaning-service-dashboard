@@ -16,8 +16,8 @@ const About = () => {
     height: 600,
     iframe: false,
   };
-
-  // On component mount, load the content from the database if available, otherwise from localStorage
+  // On component mount, load the content from the database if available, 
+  // otherwise from localStorage
   useEffect(() => {
     if (about?.data?.text) {
       setContent(about.data.text); // Load from API response (from the database)
